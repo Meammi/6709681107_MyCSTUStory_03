@@ -27,16 +27,16 @@ h1{
     font-size: 4rem;
 }
 h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 p{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 small{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 li{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 a{
     color: var(--text-color);
@@ -47,16 +47,13 @@ a:link{
 a:hover{
     color: var(--link-hover-color);
 }
-.icon{
-    width: 2rem;
-    height: auto;
-}
+
 ul{
     font-size: 2.5rem;
     list-style-type: none;
     flex-wrap: nowrap;
 }
-
+/* Header-start */
 header{
     display: flex;
     align-items: center;
@@ -72,7 +69,8 @@ header{
     display: flex;
     justify-content: space-around;
 }
-
+/* Header-end */
+/* main-start */
 .main{
     display: flex;
     flex: 1;
@@ -80,36 +78,25 @@ header{
     min-height: 60%;
     padding:0 4% 0 4%;
     margin: 2% 0 2% 0;
-}
-.main-content{
     text-align: left;
+    gap: 2%;
 }
-.main-content ul{
-    list-style-type: circle;
-}
-.video{
-    display: flex;
-    width: 100%;
-    height: 30%;
-    padding: 8px 0 8px 0;
-}
+/* main-left-start */
 .left{
-    display: block;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    gap: 2%;
 }
-.left img {
-    max-width: 70%;
+.left-profile{
+    max-width: 100%;
+    height: auto;
     border-radius: 20%;
 }
 .left-text{
     flex-wrap: wrap;
-    padding-top: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
     column-count: 2;
+    max-height: 30%;
 }
 .left-text li{
     display: flex;
@@ -117,6 +104,28 @@ header{
     flex-wrap: nowrap;
     gap: 0.5rem;
 }
+.icon{
+    max-width: 6rem;
+    height: auto;
+}
+/* main-left-start */
+/* main-right-start */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 70%;
+}
+.video{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding: 8px 0 8px 0;
+}
+.main-content ul{
+    list-style-type: circle;
+}
+
 
 footer{
     min-height: 20% ;
