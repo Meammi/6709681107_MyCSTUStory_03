@@ -141,6 +141,10 @@ footer{
     align-items: flex-start;
     text-align: left;
 }
+.footer-left-item{
+    display: flex;
+    gap: 0.5rem;
+}
 .footer-left li{
     display:flex;
     gap: 1rem;
@@ -148,8 +152,11 @@ footer{
 .footer-right{
     flex: 1;
 }
-.footer-right ul{
-    columns: 3;
+.footer-right-item-container{
+    min-height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 /* footer-end */
 .timeline-container{
@@ -270,10 +277,6 @@ footer{
     h2{
         font-size: 1.75rem;
     }
-    /* .icon{
-        width: 1.75rem;
-        height: auto;
-    } */
     p{
         font-size: 1.25rem;
     }
@@ -320,6 +323,26 @@ footer{
     .main-content ul{
         text-align: left;
     }
+    footer{
+        flex-direction: column;
+    }
+    .footer-left{
+        align-items: center;
+        margin: 2%;
+    }
+    .footer-left-item-container{
+        max-width: 70%;
+    }
+    .footer-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .footer-right-item-container{
+        justify-content: space-evenly;
+        min-width: 50%;
+    }
     .video{
         display: flex;
         width: 50%;
@@ -344,18 +367,11 @@ footer{
     li{
         font-size: 1.25rem;
     }
-    
-
 }
 /* Mobile L */
 @media all and (max-width: 425px) {
     header h2{
         font-size: 1.5rem;
-    }
-    .video{
-        display: flex;
-        width: 50%;
-        height: 30%;
     }
     #Logo{
         font-size: 1.75rem;
@@ -375,5 +391,38 @@ footer{
     }
     li{
         font-size: 1rem;
+    }
+}
+/* Mobile S */
+@media all and (max-width: 320px) {
+    .left-profile{
+        max-width: 50%;
+    }
+    header h2{
+        font-size: 1.25rem;
+    }
+    .video{
+        display: flex;
+        width: 70%;
+        height: 30%;
+    }
+    #Logo{
+        font-size: 1.5rem;
+    }
+    .icon{
+        width: 1.25rem;
+        height: auto;
+    }
+    h1{
+        font-size: 1.25rem;
+    }
+    h2{
+        font-size: 0.75rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+    li{
+        font-size: 0.75rem;
     }
 }
