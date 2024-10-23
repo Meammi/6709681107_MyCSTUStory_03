@@ -258,50 +258,69 @@ footer{
         column-count: 1;
     }
 }
+/* Labtop */
 @media all and (max-width: 1024px) {
 
     #Logo{
-        font-size: 3rem;
+        font-size: 1.25rem;
     }
     h1{
-        font-size: 3rem;
+        font-size: 1.75rem;
     }
     h2{
-        font-size: 2rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-    li{
-        font-size: 1rem;
-    }
-    header{
-        padding: 0;
-    }
-    .header-text{
-        column-count: 1;
-    }
-    .left-text{
-        column-count: 1;
+        font-size: 1.25rem;
     }
     .icon{
-        width: 2rem;
+        width: 1.75rem;
         height: auto;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+    li{
+        font-size: 1.25rem;
     }
 
 }
+/* Tablet */
 @media all and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        padding: 0;
+    }
+    header h2{
+        font-size: 1.75rem;
+    }
+    .header-right{
+        flex-direction: column;
+    }
     .main{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .left{
+        min-width: 100%;
+        align-items: center;
+    }
+    .left-profile{
+        max-width: 25% ;
+        height: auto;
+    }
+    .left-text{
+        column-count: 2;
+    }
     .main-content{
+        padding: 0 8% 0 8%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+    .main-content ul{
+        text-align: left;
     }
     .video{
         display: flex;
@@ -311,33 +330,21 @@ footer{
     #Logo{
         font-size: 2rem;
     }
+    .icon{
+        width: 1.5rem;
+        height: auto;
+    }
     h1{
-        font-size: 1rem;
+        font-size: 1.75rem;
     }
     h2{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     p{
-        font-size: 0.5rem;
+        font-size: 1.25rem;
     }
     li{
-        font-size: 0.5rem;
-    }
-    header{
-        padding: 0;
-    }
-    .header-text{
-        column-count: 1;
-    }
-    .left{
-        max-width: 40%;
-    }
-    .left-text{
-        column-count: 2;
-    }
-    .icon{
-        width: 1rem;
-        height: auto;
+        font-size: 1.25rem;
     }
     
 
